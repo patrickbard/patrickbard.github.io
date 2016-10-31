@@ -38,44 +38,157 @@
 					<h1>Azure IoT Hub</h1>
 				</section>
 
-				<section style="text-align: left;">
-					<div style="position: absolute; top: 50px;">
-						<h1>dskajsd</h1>
+				<section>
+					<div style="font-size:35px; text-align:left">
+						<h3>Estrutura</h3>
 						<ul>
-							<li>asd1</li>
-							<li>asd2</li>
-							<li>asd3</li>
+							<li>Introdução</li>							
+							<li>Criação e Overview</li>							
+							<li>SDKs</li>							
+							<li>Segurança</li>
+							<li>Valores</li>							
 						</ul>
 					</div>
 				</section>
 
-				<section data-state="header1">
-					<style>.header1 header:after { content: "Header 1 Example"; }</style>
-					<p>header1 example</p>
+				<section>
+					<h2>Introdução</h2>
+				</section>
+
+				<section data-state="intro">
+					<style>.intro header:after { content: "Introdução"; }</style>
+					<div style="font-size:35px; text-align:left">
+						<p>
+							O <em>Azure Iot Hub</em> é a plataforma da Microsoft para aplicações
+							entre dispositivos de Internet das Coisas com os demais serviços Azure.
+						</p>
+					</div>			
+				</section>
+
+				<section data-state="intro">
+					<div style="font-size:35px; text-align:left">
+						<h3>Possui</h3>
+						<ul>							
+							<li>Introdução rápida</li>
+							<li>Suporte a um amplo conjunto de sistemas operacionais e protocolos</li>
+							<li>Ampla integração com o ambiente Azure</li>
+							<li>Vasta documentação oficial</li>
+						</ul>				
+					</div>			
+				</section>
+
+				<section data-state="intro">
+					<div style="font-size:35px; text-align:left">
+						<h3>Permite</h3>
+						<ul>
+							<li>Conectar e gerenciar bilhões de ativos</li>
+							<li>Estabelecer comunicação confiável e bidirecional</li>
+							<li>Aprimorar a segurança de suas soluções de IoT</li>
+							<li>Ingerir dados em tempo real e carregar arquivos na nuvem</li>
+							<li>Fazer uma rica análise de dados</li>
+						</ul>				
+					</div>			
+				</section>
+
+				<section data-state="create">
+					<style>.create header:after { content: "Criação e Overview"; }</style>		
+					<h3>Criando um IoT hub</h3>		
+					<img src="imgs/create-iot-hub1.png">
+				</section>
+
+				<section data-state="create">					
+					<h3>Criando um IoT hub</h3>		
+					<img src="imgs/create-iot-hub2.png" height="600px">
+				</section>
+
+				<section data-state="create">
+					<h3>Overview</h3>		
+					<img src="imgs/hub.png">
+				</section>
+
+				<!-- ------------------------ -->
+
+				<section>
+					<h2>SDKs</h2>
+				</section>
+
+				<section data-state="sdk">
+					<style>.sdk header:after { content: "SDKs"; }</style>
+					<div>
+						<p>A Microsoft disponibiliza o IoT device SDKs que contém um conjunto de ferramentas que facilitam construir aplicações que se conectam e que são administradas pelos serviços disponiveis no Azure IoT Hub.</p>						
+					</div>				
+				</section>
+
+				<section data-state="sdk">
+					<div>
+						<p>Este SDK é disponível para Linux, Windows e sistemas operacionais de tempo real.</p>				
+						<br>
+						<p>E possio versões em diversas linguagens, conforme o desenvolvedor se sentir mais a vontade. Sendo elas: C, Node.js, Java, .NET e Python</p>
+					</div>				
+				</section>
+
+				<section data-state="sdk">
+					<div style="font-size:35px; text-align:left">
+						<p>Além disso a Microsoft também disponibiliza o IoT Gateway SDK (beta).</p>
+						<p>Ele tem como proposta beneficiar dispositivos <em>legados</em> ou que por algum motivo não poderiam se comunicar diretamente com o hub na nuvem</p>
+						<br>
+						<ul>
+							Exemplos:
+							<li>Sensores de monitoramento sem conexão TCP/IP direta</li>
+							<li>Dispositivos com protocolos descontinuados</li>
+							<li>Dispositivos sem suporte a criptografia</li>
+							<li>etc.</li>						
+						</ul>
+					</div>
+				</section>
+
+				<!-- ------------------------ -->
+
+				<section>
+					<h2>Segurança</h2>
 				</section>
 
 				<section data-state="seguranca">
 					<style>.seguranca header:after { content: "Segurança"; }</style>
-					<p>Segurança</p>
+					<p>Hoje em dia é comum ouvir falar sobre IoT e todas possibilidades que isso pode gerar.</p>
+					<br>
+					<p>Porém pouco é discutido sobre segurança em internet das coisas...</p>
 				</section>
 
-				<section data-state="documentacao">
-					<style>.documentacao header:after { content: "Documentação"; }</style>
-					<p>Documentação</p>
+				<section data-state="seguranca">
+					<p>Na recente pesquisa de 24 de Outubro de 2016, realizada pela empresa de segurança ESET, foi apurado que:</p>
+					<ul>
+						<li>40% dos entrevistados não acham que dispositivos IoT são seguros</li>
+						<li>Mais da metade se mostrou desinteressada de adquirir um dispositovo devido a isso.</li>
+					</ul>
 				</section>
 
-				<section data-state="sdk">
-					<style>.sdk header:after { content: "IoT Gateway SDK"; }</style>
-					<p>IoT Gateway SDK</p>
+				<section data-state="seguranca">
+					<div style="font-size:35px; text-align:left">
+						<p>Em contrapartida, o Azure IoT hub da Microsoft tem a segurança dos dispositivos como um dos seus focos principais</p>
+						<ul>
+							<li>Permite identidades individuais e credenciais para cada dispositivo</li>
+							<li>Mantém confidencialidade para as mensagens, tanto do dispositivos para nuvem como da numvem para o dispositivo</li>
+							<li>Permite revogar seletivamente os direitos de acesso de dispositivos específicos.</li>
+						</ul>					
+					</div>				
 				</section>
 
-				<section>					
-					<h1>Valores</h1>				
-				</section>	
+				<section data-state="seguranca">
+					<div>
+						<p>Além disso, o IoT Hub permite o recebimento dos logs de operação detalhados sobre operações de gerenciamento de identidade e todos os eventos de conectividade de cada dispositivo.
+					</div>				
+				</section>
+
+				<!-- ------------------------ -->
+
+				<section>
+					<h2>Valores</h2>
+				</section>
 
 				<section data-state="valores1">
 					<style>.valores1 header:after { content: "Valores"; }</style>
-					<h2>Calculadora de Preços</h2>
+					<h3>Calculadora de Preços</h3>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6">
@@ -83,17 +196,17 @@
 							</div>
 							<div class="col-md-1"></div>
 							<div class="col-md-5" style="text-align: left;">
-								<p>dasdfsdfsdfsfsfsdfsd</p>
-								<p>dasd</p>
-								<p>dasd</p>
+								<p>Ampla gama de serviços disponíveis</p>
+								<p>Diversas opções de configuração</p>
+								<p>Valor adapatado as necessidades da aplicação</p>
 							</div>
 						</div>
-					</div>					
-				</section>				
+					</div>
+				</section>
 
 				<section data-state="valores2">
 					<style>.valores2 header:after { content: "Valores - Planos"; }</style>
-					<h2>Planos do Azure IoT Hub </h2>
+					<h3>Planos do Azure IoT Hub</h3>
 					<div style="font-size:30px; text-align:left">
 						<ul>
 							<li>
@@ -113,9 +226,9 @@
 				</section>
 
 				<section data-state="valores3">
-					<style>.valores3 header:after { content: "Valores - Mensagens"; }</style>
-					<h2>Tabela de preço</h2>
-					<img src="imgs/princing-table.png">					
+					<style>.valores3 header:after { content: "Valores - Planos"; }</style>
+					<h3>Tabela de preço</h3>
+					<img src="imgs/princing-table.png">
 				</section>
 
 				<section data-state="valores4">
@@ -133,7 +246,47 @@
 						<li>Dispositivo para Cloud: 256 KB</li>
 						<li>Cloud para Dispositivo: 64 KB</li>
 					</ul>
-					</div>					
+					</div>
+				</section>
+
+				<!-- ------------------------ -->
+
+				<section>					
+					<h3>Conclusão</h3>
+
+					<p>O Azure IoT Hub é um dos melhores serviços disponíveis no momento para o gerenciamento de grandes quantidades de dispositvos em internet das coisas, quantia que pode ir até milhões de ativos conectados.</p>
+					<p>A Microsoft tem investido muito para que o serviço seja fácil, intuitivo e ajude em conceitos básicos como segurança, já que no ramo de IoT sem um serviço do tipo, ela ainda não se demonstra bem desenvolvida</p>
+				</section>
+
+				<!-- ------------------------ -->
+
+				<section>					
+					<h2><em>Dúvidas?</em></h2>
+					<br>
+					<h2>Obrigado</h2>
+				</section>
+
+				<!-- ------------------------ -->
+
+				<section>
+					<div style="font-size:30px; text-align:left">
+						<h2>Referências</h2>
+						<ul>
+							<li>Azure Documentation:
+								<ul>
+									<li>https://azure.microsoft.com</li>
+								</ul>
+							</li>							
+							<li>Krebs on Security: https://krebsonsecurity.com/2016/10/ddos-on-dyn-impacts-twitter-spotify-reddit/</li>								
+							<li>Tech Runch: https://techcrunch.com/2016/10/21/many-sites-including-twitter-and-spotify-suffering-outage/</li>
+							<li>Eset:
+								<ul>
+									<li>https://www.eset.com/us/resources/detail/survey-internet-of-stranger-things/</li>
+									<li>https://www.eset.com/us/resources/detail/half-of-americans-discouraged-from-purchasing-internet-of-things-devices-due-to-cybersecurity-concer/</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</div>
 		</div>
